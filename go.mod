@@ -1,4 +1,4 @@
-module github.com/stainless-sdks/omnistack-go
+module github.com/OmniStack-sh/omnistack-go
 
 go 1.21
 

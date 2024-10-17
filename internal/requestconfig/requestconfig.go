@@ -17,10 +17,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/stainless-sdks/omnistack-go/internal"
-	"github.com/stainless-sdks/omnistack-go/internal/apierror"
-	"github.com/stainless-sdks/omnistack-go/internal/apiform"
-	"github.com/stainless-sdks/omnistack-go/internal/apiquery"
+	"github.com/OmniStack-sh/omnistack-go/internal"
+	"github.com/OmniStack-sh/omnistack-go/internal/apierror"
+	"github.com/OmniStack-sh/omnistack-go/internal/apiform"
+	"github.com/OmniStack-sh/omnistack-go/internal/apiquery"
 )
 
 func getDefaultHeaders() map[string]string {
