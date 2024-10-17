@@ -6,10 +6,10 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/stainless-sdks/omnistack-go/internal/apijson"
-	"github.com/stainless-sdks/omnistack-go/internal/param"
-	"github.com/stainless-sdks/omnistack-go/internal/requestconfig"
-	"github.com/stainless-sdks/omnistack-go/option"
+	"github.com/OmniStack-sh/omnistack-go/internal/apijson"
+	"github.com/OmniStack-sh/omnistack-go/internal/param"
+	"github.com/OmniStack-sh/omnistack-go/internal/requestconfig"
+	"github.com/OmniStack-sh/omnistack-go/option"
 )
 
 // CompletionService contains methods and other services that help with interacting
