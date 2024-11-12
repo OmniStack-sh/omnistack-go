@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/stainless-sdks/omnistack-go/internal/requestconfig"
-	"github.com/stainless-sdks/omnistack-go/option"
+	"github.com/OmniStack-sh/omnistack-go/internal/requestconfig"
+	"github.com/OmniStack-sh/omnistack-go/option"
 )
 
 // Client creates a struct with services and top level methods that help with

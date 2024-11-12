@@ -17,10 +17,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/stainless-sdks/omnistack-go/internal"
-	"github.com/stainless-sdks/omnistack-go/internal/apierror"
-	"github.com/stainless-sdks/omnistack-go/internal/apiform"
-	"github.com/stainless-sdks/omnistack-go/internal/apiquery"
+	"github.com/OmniStack-sh/omnistack-go/internal"
+	"github.com/OmniStack-sh/omnistack-go/internal/apierror"
+	"github.com/OmniStack-sh/omnistack-go/internal/apiform"
+	"github.com/OmniStack-sh/omnistack-go/internal/apiquery"
 )
 
 func getDefaultHeaders() map[string]string {
@@ -299,6 +299,10 @@ func retryDelay(res *http.Response, retryCount int) time.Duration {
 }
 
 func (cfg *RequestConfig) Execute() (err error) {
+	if cfg.BaseURL == nil {
+		return fmt.Errorf("requestconfig: base url is not set")
+	}
+
 	cfg.Request.URL, err = cfg.BaseURL.Parse(strings.TrimLeft(cfg.Request.URL.String(), "/"))
 	if err != nil {
 		return err

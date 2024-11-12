@@ -3,7 +3,7 @@
 package omnistack
 
 import (
-	"github.com/stainless-sdks/omnistack-go/option"
+	"github.com/OmniStack-sh/omnistack-go/option"
 )
 
 // ChatService contains methods and other services that help with interacting with

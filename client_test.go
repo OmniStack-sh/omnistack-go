@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/omnistack-go"
-	"github.com/stainless-sdks/omnistack-go/internal"
-	"github.com/stainless-sdks/omnistack-go/option"
-	"github.com/stainless-sdks/omnistack-go/shared"
+	"github.com/OmniStack-sh/omnistack-go"
+	"github.com/OmniStack-sh/omnistack-go/internal"
+	"github.com/OmniStack-sh/omnistack-go/option"
+	"github.com/OmniStack-sh/omnistack-go/shared"
 )
 
 type closureTransport struct {

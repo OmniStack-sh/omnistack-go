@@ -7,10 +7,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/stainless-sdks/omnistack-go"
-	"github.com/stainless-sdks/omnistack-go/internal/testutil"
-	"github.com/stainless-sdks/omnistack-go/option"
-	"github.com/stainless-sdks/omnistack-go/shared"
+	"github.com/OmniStack-sh/omnistack-go"
+	"github.com/OmniStack-sh/omnistack-go/internal/testutil"
+	"github.com/OmniStack-sh/omnistack-go/option"
+	"github.com/OmniStack-sh/omnistack-go/shared"
 )
 
 func TestUsage(t *testing.T) {

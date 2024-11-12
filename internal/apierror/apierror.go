@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"github.com/stainless-sdks/omnistack-go/internal/apijson"
+	"github.com/OmniStack-sh/omnistack-go/internal/apijson"
 )
 
 // Error represents an error that originates from the API, i.e. when a request is

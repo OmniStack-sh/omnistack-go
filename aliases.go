@@ -3,7 +3,7 @@
 package omnistack
 
 import (
-	"github.com/stainless-sdks/omnistack-go/internal/apierror"
+	"github.com/OmniStack-sh/omnistack-go/internal/apierror"
 )
 
 type Error = apierror.Error

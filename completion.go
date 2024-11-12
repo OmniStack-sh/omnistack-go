@@ -6,10 +6,10 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/stainless-sdks/omnistack-go/internal/apijson"
-	"github.com/stainless-sdks/omnistack-go/internal/param"
-	"github.com/stainless-sdks/omnistack-go/internal/requestconfig"
-	"github.com/stainless-sdks/omnistack-go/option"
+	"github.com/OmniStack-sh/omnistack-go/internal/apijson"
+	"github.com/OmniStack-sh/omnistack-go/internal/param"
+	"github.com/OmniStack-sh/omnistack-go/internal/requestconfig"
+	"github.com/OmniStack-sh/omnistack-go/option"
 )
 
 // CompletionService contains methods and other services that help with interacting
@@ -347,6 +347,10 @@ func (r CompletionNewParams) MarshalJSON() (data []byte, err error) {
 	return apijson.MarshalRoot(r)
 }
 
+// ID of the model to use. You can use the
+// [List models](/docs/api-reference/models/list) API to see all of your available
+// models, or see our [Model overview](/docs/models/overview) for descriptions of
+// them.
 type CompletionNewParamsModel string
 
 const (

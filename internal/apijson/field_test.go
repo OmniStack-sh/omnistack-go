@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/omnistack-go/internal/param"
+	"github.com/OmniStack-sh/omnistack-go/internal/param"
 )
 
 type Struct struct {
