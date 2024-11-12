@@ -718,18 +718,18 @@ func (r ChatCompletionNewParams) MarshalJSON() (data []byte, err error) {
 }
 
 type ChatCompletionNewParamsMessage struct {
-	Content      param.Field[interface{}] `json:"content,required"`
-	FunctionCall param.Field[interface{}] `json:"function_call,required"`
 	// The role of the messages author, in this case `system`.
-	Role      param.Field[ChatCompletionNewParamsMessagesRole] `json:"role,required"`
-	ToolCalls param.Field[interface{}]                         `json:"tool_calls,required"`
+	Role         param.Field[ChatCompletionNewParamsMessagesRole] `json:"role,required"`
+	Content      param.Field[interface{}]                         `json:"content"`
+	FunctionCall param.Field[interface{}]                         `json:"function_call"`
 	// An optional name for the participant. Provides the model information to
 	// differentiate between participants of the same role.
 	Name param.Field[string] `json:"name"`
 	// The refusal message by the assistant.
 	Refusal param.Field[string] `json:"refusal"`
 	// Tool call that this message is responding to.
-	ToolCallID param.Field[string] `json:"tool_call_id"`
+	ToolCallID param.Field[string]      `json:"tool_call_id"`
+	ToolCalls  param.Field[interface{}] `json:"tool_calls"`
 }
 
 func (r ChatCompletionNewParamsMessage) MarshalJSON() (data []byte, err error) {
@@ -851,9 +851,9 @@ func (r ChatCompletionNewParamsMessagesChatCompletionRequestUserMessageContentAr
 }
 
 type ChatCompletionNewParamsMessagesChatCompletionRequestUserMessageContentArrayOfContentPart struct {
-	ImageURL param.Field[interface{}] `json:"image_url,required"`
 	// The type of the content part.
-	Type param.Field[ChatCompletionNewParamsMessagesChatCompletionRequestUserMessageContentArrayOfContentPartsType] `json:"type,required"`
+	Type     param.Field[ChatCompletionNewParamsMessagesChatCompletionRequestUserMessageContentArrayOfContentPartsType] `json:"type,required"`
+	ImageURL param.Field[interface{}]                                                                                   `json:"image_url"`
 	// The text content.
 	Text param.Field[string] `json:"text"`
 }
@@ -1459,9 +1459,9 @@ func (r ChatCompletionNewParamsFunction) MarshalJSON() (data []byte, err error) 
 // indicates the generation exceeded `max_tokens` or the conversation exceeded the
 // max context length.
 type ChatCompletionNewParamsResponseFormat struct {
-	JsonSchema param.Field[interface{}] `json:"json_schema,required"`
 	// The type of response format being defined: `text`
-	Type param.Field[ChatCompletionNewParamsResponseFormatType] `json:"type,required"`
+	Type       param.Field[ChatCompletionNewParamsResponseFormatType] `json:"type,required"`
+	JsonSchema param.Field[interface{}]                               `json:"json_schema"`
 }
 
 func (r ChatCompletionNewParamsResponseFormat) MarshalJSON() (data []byte, err error) {
